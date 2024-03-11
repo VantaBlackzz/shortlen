@@ -77,9 +77,9 @@ db_drop:
 # Static code analysis
 ##################
 
-#phpstan:
-#	${DOCKER_COMPOSE_PHP_FPM_EXEC} vendor/bin/phpstan analyse -c phpstan.neon; \
-# 	${DOCKER_COMPOSE_PHP_FPM_EXEC} vendor/bin/phpstan clear-result-cache
+phpstan:
+	${DOCKER_COMPOSE_PHP_FPM_EXEC} vendor/bin/phpstan analyse -c phpstan.neon; \
+ 	${DOCKER_COMPOSE_PHP_FPM_EXEC} vendor/bin/phpstan clear-result-cache
 
 #deptrac:
 #	${DOCKER_COMPOSE_PHP_FPM_EXEC} vendor/bin/deptrac analyze --config-file=deptrac-layers.yaml
