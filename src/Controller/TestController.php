@@ -13,6 +13,6 @@ class TestController extends AbstractController
     #[Route(path: '/', methods: ['GET'])]
     public function action(): Response
     {
-        return $this->json(['test' => 'yeap']);
+        return $this->json(['test' => 'yes']);
     }
 }
